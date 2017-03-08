@@ -1,0 +1,38 @@
+
+Mathematical_operators =['+', '-', '*', 'div', 'mod', '=']
+Boolean_operators = ['true', 'false']
+Logical_operator = ['and', 'or', 'nand', 'nor', 'xor']
+loop_keyword = ['for', 'while', 'until']
+range_operator = ['to', 'downto']
+decision = ['case', 'if', 'then']
+delimiter =['(', ',', ';', ')', '{','}', ':']
+stdIdentifier = ['write', 'writeln', 'read', 'readln', 'var', 'integer']
+
+print('Please input your Pascal code here: ')
+xnew = raw_input()
+
+res = xnew.split(" ")
+
+num= len(res)
+for x in range(0 , num):
+     man= res[x]
+     baby= man.lower();
+     length=len(baby);
+     address = xnew.find(baby);
+     newaddress=address + 1;
+     print( newaddress );
+     end = (newaddress + length - 1);
+     print(end);
+
+     if baby in list(Logical_operator): print (baby + " => Logical_Op");
+     elif baby in list(Boolean_operators): print (baby + " => Boolean_Op");
+     elif baby in list(Mathematical_operators): print(baby +" => Mathematical_Op");
+     elif baby in list(loop_keyword): print(baby +" => Loop_Keyword");
+     elif baby in list(range_operator): print(baby + " => Range_Op");
+     elif baby in list(decision): print(baby + " => Decision");
+     elif baby in list(delimiter): print(baby + " => Delimiter");
+     elif baby in list(stdIdentifier): print(baby + " => stdIdentifier");
+     elif baby[0].isalpha(): print (baby + " => IdentifierName");
+     elif baby.isdigit(): print (baby + " => Number");
+     else: print("Lexical Error");
+

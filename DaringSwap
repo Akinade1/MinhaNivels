@@ -1,0 +1,19 @@
+group = 4,5,2
+niugrup = {}
+Akoko=group[0]
+ekeji=group[1]
+eketa=group[2]
+'''ekerin=group[4]
+'''
+if (Akoko < ekeji and Akoko < eketa ):
+   niugrup[0] = Akoko
+if (ekeji < eketa):
+    niugrup[1]=ekeji
+    niugrup[2] =eketa
+elif (ekeji > eketa):
+    niugrup[1]=eketa
+    niugrup[2]=ekeji
+
+
+
+print niugrup

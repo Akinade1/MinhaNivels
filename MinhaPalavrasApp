@@ -1,0 +1,22 @@
+import sys
+import os
+
+class PalavrasApp:
+
+    def countwords(self):
+        print "Please input some words: "
+        words=sys.stdin.readline()
+        count=words.count(" ")
+        print count + 1
+
+    def crazie(self, string):
+        print("Please put your search item in quotes")
+        searchword=input()#sys.stdin.readline()
+        posi=string.find(searchword)
+        print posi
+
+maalu_cry="No be me fuck eve, I no rig election, why e be say na me slaughter houses dey find? shoo!"
+
+a= PalavrasApp()
+
+a.crazie(maalu_cry)

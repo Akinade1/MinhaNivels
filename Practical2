@@ -1,0 +1,12 @@
+import sys
+import os
+
+#This Akins Code can help you find Palindromes Na we dey there.
+
+print("Please input your word or space separated words");
+wordtin=sys.stdin.readline()
+num=wordtin.__len__()
+real_num=num-2
+while real_num >= 0:
+    sys.stdout.write(wordtin[real_num])
+    real_num=real_num-1
